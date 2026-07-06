@@ -4,8 +4,8 @@ import "./global.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-	title: "Anything App",
-	description: "Created with Anything",
+	title: "Nutri AI",
+	description: "Smart nutrition analysis with Nutri AI",
 	icons: {
 		icon: "/favicon.png",
 	},
