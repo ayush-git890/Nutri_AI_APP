@@ -200,11 +200,8 @@ export default function NutriAIPage() {
                       Personalized
                     </span>
                   </div>
-                  <p className="text-sm text-green-800 leading-relaxed max-w-2xl">
-                    Create a complete diet plan using your age, weight, height, gender, and your state in India.
-                  </p>
-                  <p className="text-xs text-green-700">
-                    Includes calorie targets, macro split, and full-day meal schedule.
+                  <p className="text-sm italic text-green-800 leading-relaxed max-w-2xl">
+                    "Eat better today to feel stronger tomorrow."
                   </p>
                 </div>
               </div>
