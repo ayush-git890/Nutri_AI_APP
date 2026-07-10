@@ -1,8 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-import { Search, History, Leaf, ShieldCheck } from 'lucide-react';
+import { Search, History, Leaf, ShieldCheck, UtensilsCrossed, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -184,6 +185,37 @@ export default function NutriAIPage() {
             Enter a food name to get an instant nutrition and health analysis.
           </p>
         </div>
+
+        <Link href="/diet-plan" className="block group">
+          <Card className="border-green-200 rounded-xl shadow-none bg-gradient-to-r from-white to-green-50/80 transition-all duration-200 group-hover:border-green-300 group-hover:shadow-sm">
+            <CardContent className="p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <div className="flex items-start gap-3.5">
+                <div className="w-11 h-11 rounded-full bg-green-100 flex items-center justify-center mt-0.5">
+                  <UtensilsCrossed className="w-5 h-5 text-[#2D6A4F]" />
+                </div>
+                <div className="space-y-1.5">
+                  <div className="flex items-center gap-2">
+                    <p className="text-base font-semibold text-[#1B4332] leading-tight">Diet Plan</p>
+                    <span className="text-[10px] font-semibold uppercase tracking-wide px-2 py-0.5 rounded-full bg-green-100 text-green-800">
+                      Personalized
+                    </span>
+                  </div>
+                  <p className="text-sm text-green-800 leading-relaxed max-w-2xl">
+                    Create a complete diet plan using your age, weight, height, gender, and your state in India.
+                  </p>
+                  <p className="text-xs text-green-700">
+                    Includes calorie targets, macro split, and full-day meal schedule.
+                  </p>
+                </div>
+              </div>
+
+              <div className="inline-flex items-center gap-1.5 self-start sm:self-center px-3.5 py-2 rounded-lg bg-[#2D6A4F] text-white text-sm font-medium group-hover:bg-[#1B4332] transition-colors">
+                Open Planner
+                <ArrowRight className="w-4 h-4" />
+              </div>
+            </CardContent>
+          </Card>
+        </Link>
 
         {/* Search */}
         <Card className="border-green-200 rounded-xl shadow-none">
